@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        body {
+            height: 2000px;
+            background: gray;
+            font-size: larger;
+            text-align: center;
+        }
+        
+        .relative {
+            margin-top: 200px;
+            position: relative;
+            height: 200px;
+            width: 100%;
+            background-color: aqua;
+            padding: 10px;
+        }
+        
+        .fixed {
+            height: 150px;
+            line-height: 30px;
+            background: red;
+            color: #fff;
+            position: fixed;
+            width: 90%;
+        }
+        
+        .bottom {
+            height: 400px;
+            margin-top: 600px;
+            background: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="relative">
+        <div class="fixed">
+            <p>Position fixed có phần tử cha & thẻ div cha có position:relative; </p>
+            <p>Không khai báo các thuộc tính top, right, bottom, left </p>
+            <p> ==> Lấy thẻ cha làm chuẩn</p>
+        </div>
+    </div>
+    <div class="bottom">
+
+    </div>
+</body>
+
+</html>

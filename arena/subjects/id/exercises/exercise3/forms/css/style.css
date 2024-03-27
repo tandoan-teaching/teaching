@@ -1,0 +1,10 @@
+.container {
+    border: 1px solid #005282;
+    border-left: 6px solid #005282;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+legend {
+    color: yellow;
+}

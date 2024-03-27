@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form 1</title>
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <style>
+        .container {
+            width: 100%;
+            display: inline-block;
+            padding-left: 100px;
+            margin-top: 20px;
+        }
+        
+        legend {
+            color: red;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: capitalize;
+        }
+        
+        label {
+            width: 200px;
+        }
+        
+        input,
+        select {
+            width: 150px;
+        }
+        
+        form {
+            line-height: 20px;
+            width: 50%;
+        }
+        
+        .larger-width {
+            width: 80%;
+        }
+        
+        .submit {
+            color: red;
+            font-weight: bold;
+        }
+        
+        .note {
+            text-align: center;
+            color: red;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <form action="./php/form1.php" autocomplete="off">
+
+            <!-- Tạo đường viền chứa nội dung -->
+            <fieldset>
+                <!-- Chữ hiển thị trên fielset -->
+                <legend>lệnh sản xuất /production order:</legend>
+                <br>
+
+                <!-- Tạo đường viền chứa radio button -->
+                <fieldset>
+                    <legend style="color: blue; font-size: larger;">phương pháp in</legend>
+                    <br>
+                    <input type="radio" id="fthermal" name="fmethod" value="thermal">
+                    <label for="fthermal" checked="checked">Thermal</label><br>
+                    <input type="radio" id="foffset" name="fmethod" value="offset">
+                    <label for="foffset">Offset</label><br>
+                    <input type="radio" id="fdigital" name="fmethod" value="digital">
+                    <label for="fdigital">Digital</label>
+                </fieldset>
+
+                <br>
+
+                <!-- label -->
+                <div style="float: left;width:150px;">
+                    <label for="fno">No.</label> <br><br>
+                    <label for="fdate">Ngày tạo/Date:</label><br><br>
+                    <label for="fitem">Item/Mục:</label><br><br>
+                    <label for="fqty">Số lượng/Qty:</label><br><br>
+                    <label for="fshipto">Gửi đến/Ship to:</label><br><br>
+                    <label for="fshipto">Ghi chú/Note:</label><br><br>
+                </div>
+
+                <!-- input -->
+                <div style="float: left;width:70%;">
+
+                    <input type="text" name="fno" value="TH2108-XXXXX"><br><br>
+                    <input type="date" name="fdate"><br><br>
+
+                    <select id="fitem" name="fitem">
+                        <option value="item1">05H01396</option>
+                        <option value="item2" >05H01397</option>
+                        <option value="item3" selected>05H01398</option>
+                        <option value="item4" >05H01399</option>
+                        <option value="item5" >05H01400</option>
+                    </select>
+                    <br><br>
+                    <input type="text" name="fqty" placeholder=" toi la toi"><br><br>
+                    <input type="text" name="fshipto" class="larger-width"><br><br>
+                    <input type="text" name="fnote" class="larger-width"><br><br>
+
+                </div>
+
+            </fieldset>
+
+            <br>
+            <!-- submit -->
+            <div style="text-align: center;">
+                <input class="submit" type="submit" value="Save">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

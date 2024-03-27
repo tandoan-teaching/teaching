@@ -1,0 +1,66 @@
+html, body {
+    text-align: center;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#container {
+    background: gray;
+    min-height: 600px;
+    width: 100%;
+    padding: 0px;
+}
+
+#header-box {
+    background: cyan;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+}
+
+#main-menu-box {
+    background: yellow;
+    height: 40px;
+    padding: 10px;
+}
+
+#main-box {
+    background: coral;
+    min-height: 400px;
+}
+
+#footer-box {
+    background: cyan;
+    height: 70px;
+    padding: 20px;
+}
+
+#left-main-box {
+    background: red;
+    
+    float: left;
+    padding: 10px;
+}
+
+#element-main-box {
+    background: green;
+    float: left;
+    padding: 10px;
+}
+
+#right-main-box {
+    background: blue;
+    float: right;
+    padding: 10px;
+}
+
+
+.box {
+    box-sizing: border-box;
+    width: 33.33%;
+    height: 80%;
+}

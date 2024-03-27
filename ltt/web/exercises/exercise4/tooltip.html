@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tooltip</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+         :root {
+            --margin-width: 200px;
+        }
+        
+        .container {
+            border: 1px solid #005282;
+            border-left: 6px solid #005282;
+            padding: 50px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        /* Tooltip container */
+        
+        .tooltip {
+            /* sử dụng cho áp dụng position absolute của thẻ bên trong */
+            display: inline-block;
+            /*bỏ được*/
+            position: relative;
+            padding: 10px;
+            border: 1px solid blue;
+            width: 200px;
+            margin: 20px;
+            background: tomato;
+        }
+        
+        .tooltip:hover {
+            background: yellow;
+            cursor: pointer;
+            color: white;
+        }
+        /* Nội dụng tooltip */
+        
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            /* width: var(--margin-width); */
+            width: 200px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            padding: 5px 5px;
+            border-radius: 2em;
+            /* Hiển thị tooltip chồng lên văn bản */
+            position: absolute;
+            z-index: 1;
+            background: red;
+        }
+        /* Hiển thị tooltip khi di chuyển chuột đến */
+        
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+        }
+        /* tooltip LEFT */
+        
+        .tooltip:hover .left-tooltiptext {
+            top: 0px;
+            right: 105%;
+        }
+        /* tooltip RIGHT */
+        
+        .tooltip:hover .right-tooltiptext {
+            top: 0px;
+            left: 105%;
+        }
+        /* tooltip TOP */
+        
+        .tooltip .top-tooltiptext {
+            /* width: var(--margin-width); */
+            width: 200px;
+            bottom: 105%;
+            left: 50%;
+            margin-left: -100px;
+            /* Sử dụng một nửa chiều rộng (200/2 = 100), để căn giữa tooltip */
+        }
+        /* tooltip BOTTOM */
+        
+        .tooltip .bottom-tooltiptext {
+            /* width: var(--margin-width); */
+            width: 200px;
+            top: 105%;
+            left: 50%;
+            margin-left: -100px;
+            /* Sử dụng một nửa chiều rộng (200/2 = 100), để căn giữa tooltip */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="tooltip">Tooltip bên trái LEFT
+            <span class="tooltiptext left-tooltiptext">Đây là Tooltip</span>
+        </div>
+        <br>
+
+        <div class="tooltip">Tooltip bên phải RIGHT
+            <span class="tooltiptext right-tooltiptext">Đây là Tooltip</span>
+        </div>
+        <br>
+
+        <div class="tooltip">Tooltip bên trên TOP
+            <span class="tooltiptext top-tooltiptext">Đây là Tooltip</span>
+        </div>
+        <br>
+
+        <div class="tooltip">Tooltip bên dưới BOTTOM
+            <span class="tooltiptext bottom-tooltiptext">Đây là Tooltip</span>
+        </div>
+        <br>
+    </div>
+
+
+</body>
+
+</html>

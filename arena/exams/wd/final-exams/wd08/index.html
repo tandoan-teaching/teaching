@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Trang chủ</title>
+		<link rel="icon" href="./images/favicon.ico" />
+		<!-- font google -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Glory&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- font awesome -->
+		<script
+			src="https://kit.fontawesome.com/edd0735664.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- style -->
+		<link rel="stylesheet" href="./css/menu.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+
+		<!-- animation.css -->
+		<link rel="stylesheet" href="./css/animate.css" />
+
+		<!-- css Owl Carouse 2 -->
+		<link rel="stylesheet" href="./css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+
+		<!-- js Owl Carouse 2 -->
+		<script src="./js/jquery.min.js"></script>
+		<script src="./js/owl.carousel.min.js"></script>
+
+		<!-- cài đặt Owl Carouse 2 -->
+		<script>
+			$(document).ready(function () {
+				var owl = $(".owl-carousel").owlCarousel({
+					loop: true,
+					margin: 10,
+					nav: true,
+					stagePadding: 0,
+					dotsEach: true,
+					autoplay: true,
+					autoplayHoverPause: true,
+					responsive: {
+						0: {
+							items: 1,
+						},
+						600: {
+							items: 1,
+						},
+						1000: {
+							items: 1,
+						},
+						1600: {
+							items: 3,
+						},
+						2400: {
+							items: 5,
+						},
+					},
+				});
+			});
+		</script>
+
+		<!-- js wow.js -->
+		<script src="./js/wow.js"></script>
+		<!-- Cài đặt wow.js -->
+		<script>
+			wow = new WOW({
+				boxClass: "wow", // default
+				animateClass: "animated", // default
+				offset: 0,
+				mobile: true,
+				live: true,
+				video: true,
+				lazyLoad: true,
+			});
+			wow.init();
+
+			content_1_wow = new WOW({
+				boxClass: "content_1_wow",
+				animateClass: "animated", // default
+				offset: 0,
+				mobile: true,
+				live: true,
+				video: true,
+				lazyLoad: true,
+			});
+			content_1_wow.init();
+		</script>
+	</head>
+
+	<body>
+		<!-- header -->
+		<header id="header">
+			<section id="logo">
+				<a href="./index.html"> <img src="./images/logo.png" /></a>
+			</section>
+			<button class="sign-up"><a href="#">Đăng ký</a></button>
+
+			<!-- menu -->
+			<nav id="menu">
+				<ul>
+					<li class="dropdown">
+						<a class="dropdown-btn" href="#">Giới thiệu</a
+						><i class="fas fa-chevron-down"></i>
+						<div class="dropdown-content">
+							<a href="#">Multimedia</a>
+							<a href="#">Arena Multimedia</a>
+							<a href="#">Tại sao chọn Arena Multimedia</a>
+							<a href="#">Cơ sở vật chất</a>
+							<a href="#">Cộng đồng nói về Arena</a>
+							<a href="#">Nhân vật truyền cảm hứng</a>
+							<a href="#">Hỏi & đáp</a>
+							<a href="#"> </a>
+						</div>
+					</li>
+
+					<li class="dropdown">
+						<a class="dropdown-btn" href="#">Đào tạo - Tuyển sinh</a
+						><i class="fas fa-chevron-down"></i>
+						<div class="dropdown-content">
+							<div class="item">
+								<i class="fas fa-circle item-symbol"></i>&nbsp;<ins
+									>Đào tạo</ins
+								>
+							</div>
+							<a href="#">Chương trình đào tạo</a>
+							<a href="#">Phương pháp đào tạo</a>
+							<a href="#">Học phí</a>
+
+							<div class="item">
+								<i class="fas fa-circle item-symbol"></i>&nbsp;<ins
+									>Tuyển sinh</ins
+								>
+							</div>
+							<a href="#">Kết quả thi tuyển</a>
+							<a href="#">Thông tin tuyển sinh</a>
+							<a href="#">Lịch tuyển sinh</a>
+							<a href="#">Tài liệu tuyển sinh</a>
+							<a href="#">Đề thi mẫu</a>
+						</div>
+					</li>
+
+					<li class="dropdown">
+						<a class="dropdown-btn" href="#">Gallery</a
+						><i class="fas fa-chevron-down"></i>
+						<div class="dropdown-content">
+							<a href="#">Đội ngũ giảng viên</a>
+							<a href="#">Đồ án nổi bật</a>
+							<a href="#">Hoạt động học viên</a>
+
+							<div class="item">
+								<i class="fas fa-circle item-symbol"></i>&nbsp;<ins
+									>Arena Face</ins
+								>
+							</div>
+							<a href="#">Học viên tiêu biểu</a>
+							<a href="#">Portfolio học viên</a>
+						</div>
+					</li>
+
+					<li class="dropdown">
+						<a class="dropdown-btn" href="#"> Tin tức - Sự kiện</a
+						><i class="fas fa-chevron-down"></i>
+						<div class="dropdown-content">
+							<div class="item">
+								<i class="fas fa-circle item-symbol"></i>&nbsp;<ins
+									>Tin tức</ins
+								>
+							</div>
+							<a href="#">Tin Arena</a>
+							<a href="#">Tin Multimedia</a>
+							<a href="#">Tin báo chí</a>
+
+							<div class="item">
+								<i class="fas fa-circle item-symbol"></i>&nbsp;<ins
+									>Sự kiện</ins
+								>
+							</div>
+						</div>
+					</li>
+
+					<li class="dropdown">
+						<a class="dropdown-btn" href="#"> Liên thông - Tuyển dụng</a
+						><i class="fas fa-chevron-down"></i>
+						<div class="dropdown-content">
+							<a href="#">Đối tác liên thông</a>
+							<a href="#">Hỗ trợ tuyển dụng</a>
+							<a href="#">Tin tuyển dụng</a>
+						</div>
+					</li>
+					<li>
+						<a href="./final-exam-list.html">Bài thi</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- slider owl carousel 2 -->
+		<section id="slider-top">
+			<section class="owl-carousel owl-theme">
+				<div class="item-1"><img src="./images/slider-01.webp" alt="" /></div>
+				<div class="item-1"><img src="./images/slider-02.webp" alt="" /></div>
+				<div class="item-1"><img src="./images/slider-03.webp" alt="" /></div>
+			</section>
+		</section>
+
+		<!-- container box -->
+		<main id="container">
+			<!-- Content 1 -->
+			<section id="content-1" class="content-box">
+				<article
+					class="slogon-box content_1_wow fadeInDownBig"
+					data-wow-iteration="1"
+					data-wow-duration="2s"
+				>
+					<a href="#">
+						<h2>Arena Multimedia</h2>
+					</a>
+					<p style="font-size: 23px">
+						Thương hiệu số 1 tại Châu Á về đào tạo Chuyên gia Mỹ thuật Đa phương
+						tiện.
+					</p>
+				</article>
+				<section class="info-box">
+					<section
+						class="elementor content_1_wow fadeInUpBig"
+						data-wow-iteration="1"
+						data-wow-duration="1500ms"
+					>
+						<img
+							src="./images/icon-1.png"
+							class="content_1_wow rotateIn"
+							data-wow-iteration="1"
+							data-wow-duration="4s"
+						/>
+						<p>25 năm kinh nghiệm</p>
+					</section>
+
+					<section
+						class="elementor content_1_wow fadeInUpBig"
+						data-wow-iteration="1"
+						data-wow-duration="1500ms"
+					>
+						<img
+							src="./images/icon-2.png"
+							class="content_1_wow rotateIn"
+							data-wow-iteration="1"
+							data-wow-duration="4s"
+						/>
+						<p>250 trung tâm</p>
+					</section>
+
+					<section
+						class="elementor content_1_wow fadeInUpBig"
+						data-wow-iteration="1"
+						data-wow-duration="1500ms"
+					>
+						<img
+							src="./images/icon-3.png"
+							class="content_1_wow rotateIn"
+							data-wow-iteration="1"
+							data-wow-duration="4s"
+						/>
+						<p>450.000 học viên</p>
+					</section>
+
+					<section
+						class="elementor content_1_wow fadeInUpBig"
+						data-wow-iteration="1"
+						data-wow-duration="1500ms"
+					>
+						<img
+							src="./images/icon-4.png"
+							class="content_1_wow rotateIn"
+							data-wow-iteration="1"
+							data-wow-duration="4s"
+						/>
+						<p>20 quốc gia</p>
+					</section>
+				</section>
+			</section>
+
+			<!-- Content 2 -->
+			<section id="content-2" class="content-box">
+				<h2><a href="#">Đào tạo - Tuyển sinh</a></h2>
+				<div class="dao-tao">
+					<p>
+						Chương trình Chuyên gia Mỹ thuật Đa phương tiện (Arena Multimedia
+						Specialist Program – AMSP) kéo dài 30 tháng (4 kỳ học) trong lĩnh
+						vực: Thiết kế Truyền thông & Quảng cáo và Sản xuất Nội dung Giải trí
+						Kỹ thuật số
+					</p>
+					<div class="dao-tao-detail">
+						<div class="text-dao-tao">
+							<h3 class="h3-title-large">
+								thiết kế web & ứng dụng kỹ thuật số
+							</h3>
+							Học kỳ 2 cung cấp những kiến thức để thiết kế ra giao diện một
+							website hoàn chỉnh cùng những ứng dụng phục vụ cho Digital
+							Marketing, Social Media, App Mobile. Để làm được điều đó, học viên
+							phải trải qua các môn học như: Thiết kế giao diện web cơ bản, phát
+							triển trang web tương tác, sử dụng hình ảnh động cho web bằng
+							Animate CC, tiếp thị số & khái niệm truyền thông… Kết thúc kỳ 2,
+							học viên sẽ có cơ hội đảm nhận nhiều vị trí khác nhau, từ nhà
+							thiết kế web đến thiết kế đồ họa động.
+						</div>
+
+						<div class="img-dao-tao">
+							<img class="img-dao-tao-1" src="./images/hk2-title.webp" />
+							<img class="img-dao-tao-2" src="./images/hk2-img.jpg" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="content-person" class="content-box">
+				<section class="info-sub-title">
+					<h2>Nhân vật truyền cảm hứng</h2>
+					<p style="font-size: 23px">
+						"Biến đam mê thành hành trang chinh phục Showbiz Việt"
+						<br />
+						- Kawaii Tuấn Anh
+					</p>
+				</section>
+
+				<setion class="content-person">
+					<div class="info-sub-box">
+						<div class="info-sub-element info-sub-detail-01">
+							<p>
+								"Biến đam mê thành hành trang chinh phục Showbiz Việt" <br />
+								- Kawaii Tuấn Anh
+							</p>
+						</div>
+					</div>
+					<div class="info-sub-box">
+						<div class="info-sub-element info-sub-detail-02">
+							<p>
+								Chuyện về một năm học khác lạ và những điều thầy cô chúng ta bây
+								giờ mới kể
+							</p>
+						</div>
+					</div>
+					<div class="info-sub-box">
+						<div class="info-sub-element info-sub-detail-03">
+							<p>
+								Học một ngành, làm nhiều nghề và câu chuyện của những người trẻ
+								trong ngành Sáng tạo
+							</p>
+						</div>
+					</div>
+					<div class="info-sub-box">
+						<div class="info-sub-element info-sub-detail-04">
+							<p>
+								"Sự nghiệp 10 năm và niềm đam mê được “nuôi” từ những trang báo
+								cũ" <br />
+								- Stylist Trần Đạt
+							</p>
+						</div>
+					</div>
+					<div class="info-sub-box">
+						<div class="info-sub-element info-sub-detail-05">
+							<p>
+								"Làm được điều ý nghĩa cho xã hội khiến tôi không thể dừng
+								lại!"<br />
+								- Lê Quyết Thắng
+							</p>
+						</div>
+					</div>
+					<div class="info-sub-box">
+						<div class="info-sub-element info-sub-detail-06">
+							<p>
+								"Khó khăn sẽ giúp bạn nhận ra đam mê với nghề"<br />
+								- Trần Đức Viễn
+							</p>
+						</div>
+					</div>
+				</setion>
+			</section>
+		</main>
+
+		<!-- banner form sign up-->
+		<section
+			class="wow pulse"
+			data-wow-iteration="1"
+			data-wow-duration="1500ms"
+		>
+			<h2>
+				Hành trang kỹ năng tương lai
+				<br />
+				Đăng ký ngay
+			</h2>
+			<form
+				name="signup-form"
+				id="signup-form"
+				class="signup-form"
+				action="#"
+				autocomplete="off"
+			>
+				<div class="row">
+					<input
+						type="input"
+						class="signup-input"
+						name="username"
+						placeholder="Họ và tên *"
+					/>
+				</div>
+
+				<div class="row">
+					<input
+						type="input"
+						class="signup-input"
+						name="phone"
+						placeholder="Số điện thoại *"
+					/>
+				</div>
+
+				<div class="row">
+					<input
+						type="input"
+						class="signup-input"
+						name="email"
+						placeholder="Email *"
+					/>
+				</div>
+
+				<div class="row">
+					<select name="address-to-learn" class="signup-select">
+						<option value="">Địa điểm nhập học *</option>
+						<option value="hn">Hà Nội</option>
+						<option value="hcm">Hồ Chí Minh</option>
+					</select>
+				</div>
+
+				<div class="row">
+					<input
+						type="submit"
+						class="signup-btn"
+						name="submit"
+						value="Đăng ký nhập học"
+					/>
+				</div>
+			</form>
+		</section>
+
+		<!-- footer -->
+		<div id="footer">
+			<div class="footer-detail">
+				<div class="title-footer">TP.HCM</div>
+				<div id="col-1" class="box-2 ul-list">
+					<h3>Nguyễn Đình Chiểu</h3>
+					<hr />
+					<ul>
+						<li>212-214 Nguyễn Đình Chiểu, P. Võ Thị Sáu, Q. 3</li>
+						<li>Tel: 1800 1525</li>
+						<li>Email: arena@aprotrain.com</li>
+					</ul>
+				</div>
+
+				<div id="col-2" class="box-2 ul-list">
+					<h3>Nguyễn Kiệm</h3>
+					<hr />
+					<ul>
+						<li>778/10 Nguyễn Kiệm, P. 4, Q. Phú Nhuận</li>
+						<li>Tel: 1800 6325</li>
+						<li>Email: arena@aprotrain.com</li>
+					</ul>
+				</div>
+
+				<div id="col-3" class="box-2 ul-list">
+					<h3>Tân Kỳ Tân Quý</h3>
+					<hr />
+					<ul>
+						<li>Số 6, Tân Kỳ Tân Quý, P.15, Q.Tân Bình</li>
+						<li>Tel: 1800 2074</li>
+						<li>Email: arena@aprotrain.com</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer-detail">
+				<div class="title-footer">hà nội</div>
+				<div id="col-1" class="box-2 ul-list">
+					<h3>Trúc Khê</h3>
+					<hr />
+					<ul>
+						<li>80 Trúc Khê, P. Láng Hạ, Q. Đống Đa</li>
+						<li>Tel: 1800 1542</li>
+						<li>Email: arena2@aprotrain.com</li>
+					</ul>
+				</div>
+
+				<div id="col-2" class="box-2 ul-list">
+					<h3>Phạm Văn Bạch</h3>
+					<hr />
+					<ul>
+						<li>D29 Phạm Văn Bạch, P. Yên Hòa, Q. Cầu Giấy</li>
+						<li>Tel: 1800 1542</li>
+						<li>Email: arena2@aprotrain.com</li>
+					</ul>
+				</div>
+
+				<div id="col-3" class="box-2 ul-list">
+					<h3>Trần Phú</h3>
+					<hr />
+					<ul>
+						<li>110 Trần Phú, P. Mộ Lao, Q. Hà Đông</li>
+						<li>Tel: 1800 1542</li>
+						<li>Email: arena2@aprotrain.com</li>
+					</ul>
+				</div>
+
+				<!-- <div id="col-4" class="box-2 ul-list">
+                <h3>Hình thức tuyển sinh</h3>
+                <hr>
+                <ul>
+                    <li>Cách 1: Thi tuyển trực tiếp</li>
+                    <li>Cách 2: Nộp Porfolio</li>
+                </ul>
+
+
+            </div> -->
+			</div>
+		</div>
+	</body>
+</html>

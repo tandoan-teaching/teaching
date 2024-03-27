@@ -1,0 +1,80 @@
+/* 
+    NHẮC LẠI CÁC LÝ THUYẾT CSS - CÁC TỪ KHÓA CHO VIỆC HỌC DỄ DÀNG HƠN
+    CSS selectors có thể chia thành 5 loại:
+        1. Simple selectors :sử dụng thẻ html, id, class
+        2. Combinator selectors: Sử dụng dấu: "khoảng trắng", ">", "+", "~"
+        3. Pseudo-class selectors: Dựa vào trạng thái
+        4. Pseudo-elements selectors: Áp dụng cho 1 phần của phần tử (element)
+        5. Attribute selectors: Dựa vào giá trị thuộc tính
+ */
+
+
+/* Loại 1 */
+
+body {
+    font-family: sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: white;
+    padding: 50px;
+    margin: 50px;
+    background: lightblue;
+}
+
+
+/* Sử dụng cho menu đứng */
+
+#menu {
+    /* background: gray; */
+    height: 400px;
+    width: 960px;
+    display: inline-block;
+}
+
+
+/* Loại 2 */
+
+#menu ul {
+    background: #F8C800;
+    width: 250px;
+    padding: 0;
+    list-style-type: none;
+    text-align: left;
+}
+
+#menu li {
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 0 1em;
+}
+
+#menu li a {
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    color: white;
+}
+
+
+/* Loại 3 */
+
+#menu li:hover {
+    background: red;
+}
+
+#menu ul li {
+    position: relative;
+}
+
+#menu .sub-menu {
+    position: absolute;
+    left: 250px;
+    top: 0;
+    display: none;
+}
+
+#menu li:hover .sub-menu {
+    display: block;
+}

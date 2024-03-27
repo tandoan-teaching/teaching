@@ -1,0 +1,68 @@
+
+html, body{
+    background-color:#fafafa;
+    color:black;
+    -webkit-font-smoothing: antialiased;
+    margin: 0px;
+    padding: 0px;
+    outline:0px;
+    box-sizing: border-box;
+    width:100%;
+    height:100%;
+}
+
+body, input, buttom{
+    font-size: 12px;
+}
+
+body{
+    text-align: center;
+}
+
+button{
+    cursor: pointer;
+}
+
+#container{
+    display:inline-block;
+    background-color: bisque;
+    width: 1450px;
+    height:100%;
+    margin: 0px;
+}
+
+#content{
+    width: 1450px;
+    height:140px ;
+    background-color: rgb(6, 93, 117);
+    margin-left: 223px;
+}
+
+#sidebar{
+    width: 1450px;
+    height: 70px;
+    background-color: lightskyblue;
+    margin-left: 223px;
+}
+
+#product1{
+    width: 150px;
+    height:100% ;
+    background-color: rgb(137, 180, 243);
+    float:left;
+    padding:0px;
+}
+
+#product2{
+    width: 50%;
+    height:100% ;
+    background-color: rgb(243, 210, 154);
+    float:right;
+}
+
+#product3{
+    width: 50%;
+    height:100% ;
+    background-color: rgb(236, 114, 165);
+}
+

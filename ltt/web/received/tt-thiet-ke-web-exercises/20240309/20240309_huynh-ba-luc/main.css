@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+.box-header {
+    width: 1435px;
+    height: 50px;
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    line-height: 50px;
+}
+#boxheader {
+    background-color: orangered;
+}
+.chamthaymau {
+    color: white; 
+    transition: color 0.3s; 
+}
+.chamthaymau:hover,
+.chamthaymau:focus {
+    color: rgb(0, 0, 0); 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px; 
+}
+
+nav ul li a {
+    text-decoration: none; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold ;
+}
+
+
+main {
+    width: 1435px;
+    height: 100%;
+    background-color: #fff;
+}
+aside {
+    background-color: white;
+    width: 100%;
+}
+.box-main1{
+    width: 1140px;
+    height: 38px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    text-align: center;
+    line-height: 40px;
+
+}
+#boxmain1 {
+    background-color: orangered;
+    color:#fff;
+}
+
+.image-main {
+    width: 100%;
+    margin-left: 150px;
+    margin-bottom: 30px;
+}
+
+.image-main img {
+    float: left;
+    margin-right: 20px; 
+    max-width: 50%; 
+}
+
+.content {
+    overflow: hidden;
+}
+
+
+.content h2, 
+.content a {
+    text-decoration: none; 
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+}
+.content h2:hover,
+.content a:hover {
+    color: orangered; 
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 50%;
+}
+.duongkengang {
+    width: 1140px;
+    border: none; 
+    border-top: 1px solid orangered;
+    margin: 50px 0; 
+}
+.contentphu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-phu {
+    margin-left: 150px;
+    margin-right: -110px; 
+    text-align: center;
+}
+.image-phu:last-child {
+    margin-right: 150px; 
+}
+.image-phu img {
+    width: 353.33px; 
+    height: 204.55px;
+    margin-bottom: -10px; 
+}
+.contentphu p,
+.contentphu a { 
+    text-decoration: none; 
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color:black;
+}
+.contentphu p:hover,
+.contentphu a:hover {
+    color: orangered;
+}
+.contentphu2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-phu2 {
+    margin-left: 150px;
+    margin-right: -110px;
+    text-align: center;
+}
+.image-phu2:last-child {
+    margin-right: 150px; 
+}
+.image-phu2 img {
+    width: 353.33px; 
+    height: 204.55px;
+    margin-bottom: -10px; 
+}
+.contentphu2 p,
+.contentphu2 a { 
+    text-decoration: none; 
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color:black;
+}
+.contentphu2 p:hover,
+.contentphu2 a:hover {
+    color: orangered;
+}
+.banquyen{
+    font-size: 13px ;
+    margin-left: 147px;      
+ }
+.duongkengang2 {
+    width: 1140px;
+    border: none; 
+    border-top: 1px solid orangered; 
+    margin-left: 150px ;
+}
+footer {    
+    background-color: white;
+    color: orangered;
+}
+.footer-container {
+    display: flex;
+}
+
+.column {
+    flex: 1; 
+    flex-grow: 0; 
+    flex-shrink: 0;
+    flex-basis: 20%; 
+    padding: 10px; 
+    text-align: center; 
+    margin-right: -54px; 
+    margin-left: 10px;
+    box-sizing: border-box; 
+}
+
+.column:last-child {
+    margin-right: 100px; 
+}
+.column p {
+    text-align: left;
+    max-width: 50%; 
+    overflow: hidden; 
+    margin-left: 150px;
+    font-family: Arial, sans-serif; 
+    font-size: 12px; 
+    font-weight: normal; 
+    line-height: 1;
+    color: #333;
+}
+.column p:last-child {
+    margin-right: 5px;
+}

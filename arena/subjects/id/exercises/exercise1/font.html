@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Font</title>
+    <meta charset="UTF-8">
+
+    <!-- font google Ubuntu -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <!-- font google  Nunito -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+    <!-- font google Akronim -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akronim&display=swap" rel="stylesheet">
+
+    <style>
+        /* element (HTML) selector */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            width: 700px;
+            height: 400px;
+            background: lightgray;
+            margin: 40px auto;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .box {
+            display: inline-block;
+            width: 90%;
+            height: 100px;
+            margin-top: 5px;
+            border: 1px solid #666;
+            /* border-width: 1px;
+            border-style: solid;
+            border-color: red; */
+            padding: 10px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        
+        .font-1 {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: normal;
+        }
+        
+        .font-2 {
+            font-size: 22px;
+            font-style: italic;
+            font-weight: normal;
+            font-family: 'Nunito', sans-serif;
+        }
+        
+        .font-3 {
+            font-size: 30px;
+            font-style: italic;
+            font-weight: bold;
+            font-family: 'Akronim', cursive;
+            height: 130px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box font-1">
+            <h2>Font familly: Ubuntu (Regular 400)</h2>
+            <p>Font size 18px - font style normal - font weight normal</p>
+        </div>
+
+
+        <div class="box font-2">
+            <h2>Font familly: Nunito (Light 300)</h2>
+            Font size 22px - font style italic - font weight normal
+        </div>
+
+
+        <div class="box font-3">
+            <h2>Font familly: Akronim (Regular 400)</h2>
+            <p>Font size 30px - font style italic - font weight bold</p>
+        </div>
+
+    </div>
+
+
+</body>
+
+
+</html>

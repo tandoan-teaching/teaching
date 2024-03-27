@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Z-index</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        
+        .container {
+            display: inline-block;
+            border: 1px solid #005282;
+            border-left: 6px solid #005282;
+            padding: 5px;
+            background-color: #f4f4f4;
+            width: 500px;
+        }
+        
+        .colors {
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+        
+        .red,
+        .green,
+        .blue {
+            width: 100px;
+            height: 100px;
+            color: white;
+            line-height: 100px;
+            text-align: center;
+        }
+        
+        .red {
+            background: red;
+        }
+        
+        .green {
+            margin-top: -40px;
+            margin-left: 60px;
+            background: green;
+        }
+        
+        .blue {
+            margin-top: -40px;
+            margin-left: 120px;
+            background: blue;
+        }
+        /* áp dụng z-index (nhưng vẫn không có sự thay đổi)*/
+        
+        .z-index-3 {
+            z-index: 3;
+        }
+        
+        .z-index-2 {
+            z-index: 2;
+        }
+        
+        .z-index-1 {
+            z-index: 1;
+        }
+        /* Sử dụng thuộc tính position - thay đổi */
+        
+        .z-index-23 {
+            z-index: 3;
+            position: relative;
+        }
+        
+        .z-index-22 {
+            z-index: 2;
+            position: relative;
+        }
+        
+        .z-index-21 {
+            z-index: 1;
+            position: relative;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <h3>Áp dụng z-index (nhưng vẫn không có sự thay đổi)</h3>
+        <div class="colors">
+            <div class="red z-index-3">
+                <span>z-index: 3</span>
+            </div>
+            <div class="green z-index-2">
+                <span>z-index: 2</span>
+            </div>
+            <div class="blue z-index-1">
+                <span>z-index: 1</span>
+            </div>
+        </div>
+
+
+    </div>
+    <br>
+
+
+    <div class="container">
+        <h3>Áp dụng z-index + Position (Có sự thay đổi)</h3>
+        <div class="colors">
+            <div class="red z-index-23">
+                <span>z-index: 3</span>
+            </div>
+            <div class="green z-index-22">
+                <span>z-index: 2</span>
+            </div>
+            <div class="blue z-index-21">
+                <span>z-index: 1</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai tap 1</title>
+</head>
+<style>
+    html,body{
+          width: 100%;  /*chieu rong*/
+          height: 100%; /*chieu dai*/
+    }
+    #container{
+        background-color: white; /*màu background*/
+        width: 1024px;
+        height: 100%;
+    }
+    #header{
+        width: 100%;
+        height: 100px;
+        background-color: yellow;
+    }
+    #left-sidebar{
+    float:left;  /*nổi sang trái*/
+    width: 162px;
+    height: 800px;
+    background: lemonchiffon;
+    }
+    #ali{
+        color: red; /*màu chữ*/
+        background-color: orange;
+        width:155px;
+        height:6%;
+        border-bottom:solid white; /*đường viền dưới*/ /*solid là kiểu viền*/
+    }
+    #alq{
+        color: red;
+        background-color: orange;
+        width: 155px;
+        height: 6%;
+        border-bottom:solid white;
+    }
+    #alw{
+        color: red;
+        background-color: orange;
+        width: 155px;
+        height: 6%;
+        border-bottom:solid white;
+    }
+    #ale{
+        color: red;
+        background-color: orange;
+        width: 155px;
+        height: 6%;
+        border-bottom:solid white;
+    }
+    #alr{
+        color: red;
+        background-color: orange;
+        width: 155px;
+        height: 6%;
+        border-bottom:solid white;
+    }
+   #right-sidebar{
+    color: red;
+    text-align:center; /*căn chỉnh chử ra trung tâm*/
+    float:right; /*nổi sang phải*/
+    width: 550px;
+    height: 800px;
+    background: lemonchiffon;
+    }
+   #content{
+    color: red;
+    text-align:center;
+    margin-left: 150px; /*đặt lề trái phần tử bao nhiêu px */
+    margin-right: 50px; /*đặt lề phải phần tử bao nhiêu px*/
+    height: 800px;
+    background: lemonchiffon;
+    }
+    #footer{
+        width: 100%;
+        height: 100px;
+        background-color: yellow;
+        border-top:solid brown; /*đường viền trên*/ /*solid là kiểu viền*/
+        text-align:right; /*căn chỉnh chữ ra phải*/
+    }
+</style>
+<body>
+    <body>
+    
+    
+        <div id="container">
+
+            <div id="header">
+                  <font size="5px"><b><br><p style="color: red">&ensp;&ensp;TRƯỜNG ARENA MULTIMEDIA</p></b></font> <!--chỉnh size,in đậm,xuống dòng,chỉnh màu-->
+            </div> 
+                
+            <div id="left-sidebar">
+                <b> 
+                <div id="ali"><small>Giới thiệu</small></div> <!--chỉnh font chữ nhỏ -->
+                <div id="alq"><small>Đào tạo</small></div>
+                <div id="alw"><small>Tuyển sinh</small></div>
+                <div id="ale"><small>Tin tức-sự kiện</small></div>
+                <div id="alr"><small>Liên thông việc làm</small></div>
+                </b>
+                
+            </div>
+            <div id="right-sidebar">
+                <span style="font-size: 32px"><b>Giới thiệu về trường ARENA MULTIMEDIA</b></span> <!--chỉnh font chữ theo px-->
+                <br><img src="https://ovaq1.vn/wp-content/uploads/2023/11/anh-den-xi-5-min-768x1024.jpg" height="250px" width="540px" alt="den" /> <!--chèn ảnh và chỉnh chiều rộng và chiều dài-->
+                <span style="font-size: 15px">
+                 <b>
+                    <font color="black"><p align="justify">Arena Multimedia là thương hiệu đào tạo Chuyên gia Mỹ thuật Đa phương tiện số 1 tại châu Á, là một trong các sản phẩm đào tạo của tập đoàn APTECH - nhà cung cấp dịch vụ đào tạo Công nghệ thông tin hàng đầu thế giới cấp chứng chỉ quốc tế. Với hơn 25 năm kinh nghiệm (thành lập 1996 tại Mumbai, Ấn Độ), Arena Multimedia đã xây dựng hệ thông hàng trăm trung tâm đào tạo với hơn 450.000 sinh viên đang theo học trên 20 quốc gia</p></font>
+                    <font color="black"><p align="justify">Arena Multimedia là thương hiệu đào tạo Chuyên gia Mỹ thuật Đa phương tiện số 1 tại châu Á, là một trong các sản phẩm đào tạo của tập đoàn APTECH - nhà cung cấp dịch vụ đào tạo Công nghệ thông tin hàng đầu thế giới cấp chứng chỉ quốc tế. Với hơn 25 năm kinh nghiệm (thành lập 1996 tại Mumbai, Ấn Độ), Arena Multimedia đã xây dựng hệ thông hàng trăm trung tâm đào tạo với hơn 450.000 sinh viên đang theo học trên 20 quốc gia</p></font>
+                    <font color="black"><p align="justify">Arena Multimedia là thương hiệu đào tạo Chuyên gia Mỹ thuật Đa phương tiện số 1 tại châu Á, là một trong các sản phẩm đào tạo của tập đoàn APTECH - nhà cung cấp dịch vụ đào tạo Công nghệ thông tin hàng đầu thế giới cấp chứng chỉ quốc tế. Với hơn 25 năm kinh nghiệm (thành lập 1996 tại Mumbai, Ấn Độ), Arena Multimedia đã xây dựng hệ thông hàng trăm trung tâm đào tạo với hơn 450.000 sinh viên đang theo học trên 20 quốc gia</p></font>
+                      <!--chỉnh màu,sắp xếp nội dung cho các dòng có chiều rộng bằng nhau(canh đều 2 bên)-->
+                </b>
+                </span>
+            </div>
+      
+            <div id="content">
+                <b>Tin tức đào tạo
+                <br><img src="https://ovaq1.vn/wp-content/uploads/2023/11/anh-den-xi-5-min-768x1024.jpg" height="140px" width="305px" alt="den" />
+                <font color="black"><p align="justify">Chương trình đào tạo Chuyên gia Mỹ thuật Đa phương tiện - AMSP Arena Multimedia Specialist Program.
+                    Chương trình dào tạo Mỹ thuật Đa phương tiện (Arena
+                    Multimadia Specialist Program - AMSP)</p></font>
+                <b>Tin tức tuyển sinh</b>
+                <br><img src="https://ovaq1.vn/wp-content/uploads/2023/11/anh-den-xi-5-min-768x1024.jpg" height="110px" width="305px" alt="den" />
+                <font color="black"><p align="justify">Chương trình đào tạo Chuyên gia Mỹ thuật Đa phương tiện - AMSP Arena Multimedia Specialist Program.
+                    Chương trình dào tạo Mỹ thuật Đa phương tiện (Arena
+                    Multimadia Specialist Program - AMSP)</p></font>
+                <b>Việc làm - Liên thông </b>
+                <br><img src="https://ovaq1.vn/wp-content/uploads/2023/11/anh-den-xi-5-min-768x1024.jpg" height="120px" width="305px" alt="den" />
+                <font color="black"><p align="justify">Chương trình đào tạo Chuyên gia Mỹ thuật Đa phương tiện - AMSP Arena Multimedia Specialist Program.
+                    Chương trình dào tạo Mỹ thuật Đa phương tiện (Arena
+                    Multimadia Specialist Program - AMSP)</p></font>
+                </b>
+            </div>
+            <div id="footer">
+                <h1><span style="font-size: 15px;">© Môn học ID - Lớp22t4-ltm3-fc Đoàn Thanh Tân&ensp;&ensp;</span></h1> <!--&esnp; là khoảng trắng-->
+            </div>
+    
+         </div>   
+
+</body>
+    
+</body>
+</html>

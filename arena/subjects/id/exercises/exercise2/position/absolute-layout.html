@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            /* background: gray; */
+            color: white;
+            -webkit-font-smoothing: antialiased;
+            text-align: center;
+        }
+        
+        body,
+        input,
+        button {
+            font-size: 18px;
+        }
+        
+        button {
+            cursor: pointer;
+        }
+        
+        #container {
+            width: 1048px;
+            height: 100%;
+            display: inline-block;
+            border: 1px solid red;
+        }
+        
+        #header {
+            height: 100px;
+            width: 100%;
+            background: gray;
+            /* border: 1px solid white; */
+        }
+        
+        #logo {
+            width: 30%;
+            height: 100%;
+            float: left;
+        }
+        
+        #logo img {
+            width: 150px;
+            padding-top: 10px;
+        }
+        
+        #title {
+            width: 70%;
+            height: 100px;
+            line-height: 100px;
+            float: left;
+            color: yellow;
+            text-transform: uppercase;
+        }
+        
+        h1 {
+            font-size: 32px;
+        }
+        
+        #content {
+            height: 400px;
+            width: 100%;
+            background: #ccc;
+            /* Để áp dụng positon absolute */
+            position: relative;
+        }
+        /* menu */
+        
+        #col-1 {
+            width: 248px;
+            height: 100%;
+            background: #666;
+        }
+        
+        #col-2 {
+            width: 800px;
+            padding: 10px;
+            box-sizing: border-box;
+            /* Định vị vị trí */
+            position: absolute;
+            left: 248px;
+            top: 0px;
+        }
+        
+        #footer {
+            height: 80px;
+            background: gray;
+            line-height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div id="header">
+            <div id="logo">
+                <img src="../../media/images/logo.webp">
+            </div>
+            <div id="title">
+                <h1>Trường Arena Multimedia</h1>
+            </div>
+        </div>
+
+        <div id="content">
+            <div id="col-1">
+                <h2>Menu</h2>
+            </div>
+            <div id="col-2">
+                <h2>Main Content</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia dolorem quas aliquid? Nam nesciunt, obcaecati, minus, totam ratione iste quisquam inventore quaerat dignissimos deleniti eos temporibus vel aspernatur numquam accusamus.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia dolorem quas aliquid? Nam nesciunt, obcaecati, minus, totam ratione iste quisquam inventore quaerat dignissimos deleniti eos temporibus vel aspernatur numquam accusamus.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia dolorem quas aliquid? Nam nesciunt, obcaecati, minus, totam ratione iste quisquam inventore quaerat dignissimos deleniti eos temporibus vel aspernatur numquam accusamus.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia dolorem quas aliquid? Nam nesciunt, obcaecati, minus, totam ratione iste quisquam inventore quaerat dignissimos deleniti eos temporibus vel aspernatur numquam accusamus.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia dolorem quas aliquid? Nam nesciunt, obcaecati, minus, totam ratione iste quisquam inventore quaerat dignissimos deleniti eos temporibus vel aspernatur numquam accusamus.</p>
+            </div>
+
+        </div>
+
+        <div id="footer">
+            ©2021 FC Đoàn Thanh Tân
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+html {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: url("../images/head-bg.webp");
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+    outline: none;
+}
+
+input {
+    line-height: normal;
+}
+
+label,
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#logo {
+    float: left;
+}
+
+#logo img {
+    width: 130px;
+    padding: 10px;
+}
+
+#header {
+    background: #0085be;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+}
+
+#banner img {
+    height: 500px;
+    width: 100%;
+}
+
+#content-index {
+    margin: 100px 10px 10px 50px;
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    background: #F8C800;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 2em;
+    -webkit-border-radius: 2em;
+    -moz-border-radius: 2em;
+    -ms-border-radius: 2em;
+    -o-border-radius: 2em;
+    margin: 20px 50px;
+}
+
+.btn a {
+    color: white;
+}
+
+#main-content {
+    background: none;
+    min-height: 400px;
+    margin: 40px;
+}
+
+#main-page {
+    background: white;
+    color: black;
+    border: 1px solid blue;
+    border-radius: 3em;
+    width: 80%;
+    min-height: 400px;
+    padding: 20px;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+}
+
+.content img {
+    width: 450px;
+    height: 250px;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.main-title {
+    color: #F8C800;
+    font-size: 30px;
+    font-weight: 700 !important;
+    margin: 30px 0;
+}
+
+.normal-list {
+    list-style-type: disc;
+    margin: 10px;
+    padding: 10px;
+    overflow: visible;
+    background: none;
+}
+
+.normal-list li {
+    clear: both;
+    border-right: 0 !important;
+    list-style-type:square;
+    border-bottom: 0.01em dotted #00aeef;
+    font-size: 16px;
+}
+
+h4 {
+    text-align: left;
+    font-size: 20px;
+}
+
+h3 {
+    padding-bottom: 20px;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+p {
+    text-align: justify;
+}

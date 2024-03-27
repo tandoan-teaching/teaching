@@ -1,0 +1,75 @@
+body {
+    text-align: center;
+    /* padding: 100px 100px 100px 300px; */
+    padding-top: 50px;
+    font-size: 14px;
+    color: black;
+    opacity: 0.9;
+    font-family: sans-serif;
+}
+
+h2 {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#container {
+    border: 1px solid #ffc600;
+    width: 960px;
+    height: 100%;
+    /* Sử dụng kết hợp với "text-align: center;" từ nội dung chứa nó  */
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+/* 
+    Định dạng ul li giống như button 
+    Áp dụng cho nội dung READ MORE
+*/
+
+.btn-list {
+    /* Làm cho READ MORE di chuyển nguyên khối sang bên phải */
+    text-align: right;
+}
+
+.btn-list li {
+    display: inline;
+    margin: 0 12px;
+    /* Làm cho nội dung chữ READ MORE nằm giữa khối */
+    text-align: center;
+}
+
+.btn-list li a {
+    background-color: #ffc600;
+    border-radius: 2em;
+    color: #fff;
+    /*TạokhốichoREADMORE*/
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    min-width: 120px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    -webkit-border-radius: ;
+    -moz-border-radius: ;
+    -ms-border-radius: ;
+    -o-border-radius: ;
+}
+
+.btn-list li a:hover {
+    background-color: #00aeef;
+    color: red;
+    font-size: 20px;
+}

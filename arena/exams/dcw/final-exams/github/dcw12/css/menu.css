@@ -1,0 +1,76 @@
+/* Sử dụng cho định dạng main menu */
+
+.menu {
+    height: 80px;
+    line-height: 80px;
+}
+
+.home {
+    border-left: 0.01em dotted #00aeef;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background: #F8C800; */
+    background: #0085be;
+    /* box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2); */
+}
+
+li {
+    float: left;
+    border-right: 0.01em dotted #00aeef;
+    font-size: 18px;
+}
+
+li.dropdown {
+    display: inline-block;
+    min-width: 100px;
+}
+
+li a:hover,
+.dropdown:hover {
+    background: #00aeef;
+}
+
+li a,
+.dropdown-btn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    /*background: #F8C800;
+    */
+    background: #0085be;
+    min-width: 200px;
+    border-bottom: 0.01em dotted #00aeef;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 2);
+    z-index: 1;
+    top: 80px;
+    transition: all .3s ease-in-out;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    line-height: 2;
+}
+
+.dropdown-content a:hover {
+    background: #00aeef;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

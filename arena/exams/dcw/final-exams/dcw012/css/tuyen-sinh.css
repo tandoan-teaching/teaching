@@ -1,0 +1,44 @@
+#col-1 {
+    /* background: red; */
+    float: left;
+}
+
+#col-2 {
+    /* background: green; */
+    float: left;
+}
+
+#col-3 {
+    /* background: blue; */
+    float: left;
+}
+
+#col-4 {
+    /* background: red; */
+    float: right;
+}
+
+.box-2 {
+    padding: 10px;
+    margin: 0px;
+    box-sizing: border-box;
+    width: 25%;
+}
+
+.ul-list {
+    list-style-type: none;
+    padding: 10px;
+    overflow: visible;
+}
+
+.ul-list ul {
+    background: none;
+    border: none;
+    color: black !important;
+}
+
+.ul-list li {
+    background: none;
+    border: none;
+    clear: both;
+}

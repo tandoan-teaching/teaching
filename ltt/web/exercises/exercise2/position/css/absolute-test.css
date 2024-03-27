@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+}
+
+.relative {
+    display: inline-block;
+    height: 300px;
+    width: 300px;
+    background: gray;
+    margin-top: 100px;
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+}
+
+.red {
+    background: red;
+    top: 50px;
+    left: 100px;
+}
+
+.green {
+    background: green;
+    top: 100px;
+    left: 150px;
+}
+
+.blue {
+    background: blue;
+    top: 150px;
+    left: 200px;
+}

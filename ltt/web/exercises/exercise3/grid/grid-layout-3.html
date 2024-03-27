@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+
+    <style>
+        #grid-container {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 2fr;
+            grid-template-rows: 100px 40px 400px 80px;
+            background: greenyellow;
+            text-align: center;
+            border: 1px solid red;
+        }
+        
+        #left-header {
+            grid-column: 1/ span 2;
+        }
+        
+        #right-header {
+            grid-column: 3/ span 2;
+        }
+        
+        #main-menu {
+            grid-column: 1/ span 4;
+        }
+        
+        #mid-content {
+            grid-column: 2/ span 2;
+        }
+        
+        #footer {
+            grid-column: 1/ span 4;
+        }
+        
+        .item {
+            border: 1px solid red;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="grid-container">
+        <div class="item item1" id="left-header">Left header</div>
+        <div class="item item4" id="right-header">Right header</div>
+
+
+        <div class="item item5" id="main-menu">Main Menu</div>
+
+
+
+        <div class="item item9" id="left-content">Left Content</div>
+        <div class="item item10" id="mid-content">Mid Content</div>
+
+        <div class="item item12" id="right-content">Right Content</div>
+
+        <div class="item item13" id="footer">Footer </div>
+
+
+    </div>
+
+</body>
+
+</html>

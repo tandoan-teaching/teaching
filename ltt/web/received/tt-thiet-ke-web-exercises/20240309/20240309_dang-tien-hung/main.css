@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+#body{
+    font-family: "Kanit", sans-serif;
+}
+h3{
+    font-size:40px;
+    color:rgb(53, 19, 97);
+    padding:10px,20px;
+    text-transform: uppercase;
+    border:1px solid #ffffff;
+    display:inline-block;
+    margin:10px;
+}
+ul.products{
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-between ;
+    font-size: 17px;
+}
+ul.products li{
+    flex-basis: 50%;
+    padding-left: 5%;
+    padding-right:5%;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+ul.products img{
+    max-width: 100%;
+    height:auto;
+}
+ul.products li .products-top .product-thumb .box-hover2{
+    display: block;
+}
+ul.products li .products-top .product-thumb .box-hover2 img{
+    display: block;
+}
+ul.products li .products-top a.buy-now{
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    background-color: #ca46b6;
+    color: #ffffff;
+    padding:5px;
+}
+ul.products li .product-info a{
+    display:block;
+    text-decoration-line: none;
+}
+ul.products li .product-info a.products-cat{
+    font-size:20px;
+    padding-bottom:3px;
+    color:rgb(172, 27, 27)
+}
+ul.products li .product-info a.products-name{
+    color:#ffffff;
+    padding-bottom:10px;
+    text-decoration-line:underline;
+}    
+ul.products li .product-info .products-price{
+    font-size: 40px;
+    font-weight: 400;
+}
+#tag{
+    font-size: 70px;
+    color: rgb(53, 19, 97);
+    border:1px solid #ffffff;
+    display:inline-block;
+    margin:10px;
+}
+#wrapper{
+    margin: 0px auto;
+    max-width: 3000px;
+    max-height:3000px
+}
+#header{
+    padding: 1px;
+    list-style-type: none;
+    text-align: center;
+    color:#ffffff;
+    background-color: rgb(13, 0, 80);
+    
+}
+#header li{
+    display:inline-block;
+    font-size: 20px;
+    text-decoration-line:underline;
+    
+}
+#Main-content{
+    display: flex;
+    height: 3000px;
+}
+#sidebar{
+    font-size: 30px;
+    color: #ffffff;
+    margin-right: px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 300px;
+    height:3000px;
+    flex-basis: 20%;
+    background-color: rgb(100, 162, 255);
+    
+}
+#tiemkiem{
+    width: 170px;
+    height: 40px;
+    padding-top: 10px;
+    ;
+}
+#search-box{
+    background-color: (100, 162, 255);
+    display
+}
+#content{
+    flex-basis: 80%;
+    background-image: linear-gradient(#6d76f4, #ef7ef3);
+    padding-left: 20px;
+    padding-right: 50px;
+    font-size: 30px;
+    text-align: center;
+    color:#ffffff;
+}
+#footer{
+    background-color: rgb(186, 0, 105);
+    padding:1px;
+    color:#ffffff;
+    text-align: center;
+}
+#box-hover{
+    margin: 20px auto;
+    border: 1px solid #ffffff;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 600px;
+
+}
+#box-hover img {
+    max-width: 100%;
+    transition: all 1s;
+}
+#box-hover .img-change {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+}
+#box-hover:hover .img-change {
+    opacity: 0;
+}
+
+#box-hover2{
+    margin: 10px auto;
+    border: 3px solid #000000;
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    width: 200px;
+
+}
+#box-hover2 img {
+    max-width: 100%;
+    transition: all 1s;
+}
+#box-hover2 .img-change2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 1;
+}
+#box-hover2:hover .img-change2 {
+    opacity: 0;
+}

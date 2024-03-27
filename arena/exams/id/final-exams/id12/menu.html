@@ -1,0 +1,169 @@
+<!-- CSS: Đây là phần định dạng css cho menu -->
+<style>
+    #menu {
+        display: inline-block;
+        box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+        margin-right: 20px;
+    }
+    /* Sử dụng cho menu */
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        /* background: #F8C800; */
+        background-color: transparent;
+        font-weight: 700;
+        /* text-transform: uppercase; */
+    }
+    
+    li {
+        float: left;
+        /* border-right: 1px solid white; */
+        text-transform: uppercase;
+        padding-right: 0.5rem;
+    }
+    
+    li.dropdown {
+        display: inline-block;
+    }
+    
+    li a:hover,
+    .dropdown:hover {
+        background: #f5ed28;
+    }
+    
+    li a,
+    .dropdown-btn {
+        display: inline-block;
+        color: #333;
+        text-align: center;
+        padding: 0 7px;
+        text-decoration: none;
+    }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background: #f5ed28;
+        z-index: 1;
+        line-height: 2;
+        border: none;
+        transition: all .3s ease-in-out;
+        text-transform: none;
+        padding-right: 0.5rem;
+        min-width: 227px;
+    }
+    
+    .dropdown-content a {
+        color: #333;
+        padding: 3px 16px;
+        display: block;
+        text-align: left;
+        background-color: transparent;
+        /* transition: all .3s ease-in-out; */
+        border: 0!important;
+        padding-left: 1.5rem;
+    }
+    
+    .dropdown-content a:hover {
+        /* background-color: tomato; */
+        background-image: linear-gradient(to right, #ffc600, #F8C800, #f5ed28);
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    
+    .item {
+        text-align: left;
+        padding-left: 10px;
+        font-weight: bolder;
+    }
+    
+    .item-symbol {
+        font-size: 7px;
+        position: relative;
+        top: -3px;
+    }
+</style>
+
+
+<!-- HTML: Đây là phần nội dung menu -->
+<div id="menu">
+    <ul>
+        <li class="dropdown">
+            <a class="dropdown-btn" href="#">Giới thiệu</a><i class="fas fa-chevron-down"></i>
+            <div class="dropdown-content">
+                <a href="#">Multimedia</a>
+                <a href="#">Arena Multimedia</a>
+                <a href="#">Tại sao chọn Arena Multimedia</a>
+                <a href="#">Cơ sở vật chất</a>
+                <a href="#">Cộng đồng nói về Arena</a>
+                <a href="#">Nhân vật truyền cảm hứng</a>
+                <a href="#">Hỏi & đáp</a>
+                <a href="#"> </a>
+
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a class="dropdown-btn" href="#">Đào tạo - Tuyển sinh</a><i class="fas fa-chevron-down"></i>
+            <div class="dropdown-content">
+                <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Đào tạo</ins></div>
+                <a href="#">Chương trình đào tạo</a>
+                <a href="#">Phương pháp đào tạo</a>
+                <a href="#">Học phí</a>
+
+                <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Tuyển sinh</ins></div>
+                <a href="#">Kết quả thi tuyển</a>
+                <a href="#">Thông tin tuyển sinh</a>
+                <a href="#">Lịch tuyển sinh</a>
+                <a href="#">Tài liệu tuyển sinh</a>
+                <a href="#">Đề thi mẫu</a>
+
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a class="dropdown-btn" href="#">Gallery</a><i class="fas fa-chevron-down"></i>
+            <div class="dropdown-content">
+                <a href="#">Đội ngũ giảng viên</a>
+                <a href="#">Đồ án nổi bật</a>
+                <a href="#">Hoạt động học viên</a>
+
+                <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Arena Face</ins></div>
+                <a href="#">Học viên tiêu biểu</a>
+                <a href="#">Portfolio học viên</a>
+
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a class="dropdown-btn" href="#"> Tin tức - Sự kiện</a><i class="fas fa-chevron-down"></i>
+            <div class="dropdown-content">
+                <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Tin tức</ins></div>
+                <a href="#">Tin Arena</a>
+                <a href="#">Tin Multimedia</a>
+                <a href="#">Tin báo chí</a>
+
+                <div class="item"><i class="fas fa-circle item-symbol"></i>&nbsp;<ins>Sự kiện</ins></div>
+
+            </div>
+        </li>
+
+        <li class="dropdown">
+            <a class="dropdown-btn" href="#"> Liên thông - Tuyển dụng</a><i class="fas fa-chevron-down"></i>
+            <div class="dropdown-content">
+                <a href="#">Đối tác liên thông</a>
+                <a href="#">Hỗ trợ tuyển dụng</a>
+                <a href="#">Tin tuyển dụng</a>
+
+            </div>
+        </li>
+        <li>
+            <a href="#">Liên hệ</a>
+        </li>
+    </ul>
+</div>

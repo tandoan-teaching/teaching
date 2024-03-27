@@ -1,0 +1,28 @@
+.content {
+    width: 100%;
+    height: 300px;
+    margin: 20px 0;
+}
+
+.content-1 {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.content-2 {
+    float: right;
+    width: 50%;
+    height: 100%;
+}
+
+.content-box {
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 99%;
+    max-height: 99%;
+    display: block;
+}

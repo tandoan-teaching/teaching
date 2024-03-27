@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gradient</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+        /* Trường hợp trình duyệt không hỗ trợ  */
+        
+        .do-not-gradient {
+            background-color: red;
+            /* background: lightblue; */
+        }
+        
+        #grad-top-to-bottom {
+            height: 100px;
+            background-image: linear-gradient(to bottom, red, yellow);
+        }
+        
+        #grad-left-to-right {
+            height: 100px;
+            background-image: linear-gradient(to right, red, yellow);
+        }
+        
+        #grad-right-to-left {
+            height: 100px;
+            background-image: linear-gradient(to left, red, yellow);
+        }
+        
+        #grad {
+            height: 100px;
+            background-image: linear-gradient(to bottom right, red, yellow);
+        }
+        
+        #grad-multiple {
+            height: 100px;
+            background-image: linear-gradient(red, yellow, green);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="width:400px;">
+
+        <h3>Linear Gradient - Trên xuống dưới</h3>
+        <p>linear gradient bắt đầu màu đỏ từ trên chuyển dần màu vàng xuống dưới</p>
+
+        <div id="grad-top-to-bottom" class="do-not-gradient"></div>
+
+        <h3>Linear Gradient - Trái sang phải</h3>
+        <p>linear gradient bắt đầu màu đỏ từ trái chuyển dần màu vàng sang phải</p>
+
+        <div id="grad-left-to-right" class="do-not-gradient"></div>
+
+
+        <h3>Linear Gradient - Phải sang trái</h3>
+        <p>linear gradient bắt đầu màu đỏ từ phải chuyển dần màu vàng sang trái</p>
+
+        <div id="grad-right-to-left" class="do-not-gradient"></div>
+
+
+        <h3>Linear Gradient - Từ trên - Bên trái xuống Dưới - Bên phải</h3>
+        <p>linear gradient bắt đầu màu đỏ từ trên - bên trái chuyển dần màu vàng xuống dưới - qua phải</p>
+
+        <div id="grad" class="do-not-gradient"></div>
+
+
+        <h3>Linear Gradient - Multiple</h3>
+        <p>linear gradient kết hợp nhiều màu</p>
+
+        <div id="grad-multiple" class="do-not-gradient"></div>
+    </div>
+
+
+</body>
+
+</html>

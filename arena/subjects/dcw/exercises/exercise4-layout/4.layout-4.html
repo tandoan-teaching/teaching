@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Layout div float </title>
+    <meta charset="UTF-8">
+    <style>
+        /* css reset */
+        /* thẻ html */
+        
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+
+            /* canh lề văn bản */
+            text-align: center;
+            /* màu chữ */
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        /* id */
+        
+        #header {
+            height: 70px;
+            width: 100%;
+            background-color:chartreuse;
+
+            position: fixed;
+            top: 0;
+            
+        }
+        
+        #main {
+            height: 90%;
+            width: 100%;
+            background: aqua;
+
+            /* để cho phần nội dung không bị che khuất bởi header */
+            /* đúng bằng chiều cao header */
+            margin-top: 70px;
+        }
+        
+        #footer {
+            height: 100px;
+            width: 100%;
+            background:tomato;
+            
+        }
+        
+        #left-main {
+            background-color: red;
+            /* Float: Làm cho phần tử trôi nổi theo giá trị float được khai báo */
+            float: left;
+        }
+        
+        #mid-main {
+            float: left;
+            background-color: green;
+        }
+        
+        #right-main {
+            background: blue;
+            float: right;
+        }
+
+        .box-3 {
+            width: 33.33%;
+            height: 100%;
+            box-sizing: border-box;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Thẻ div chứa header -->
+    <div id="header">
+        header - Cố định
+    </div>
+
+    <!-- Thẻ main chứa toàn bộ nội dung -->
+    <div id="main">
+
+        <div id="left-main" class="box-3">
+            Left main here
+        </div>
+
+        <div id="mid-main" class="box-3">
+            Mid main here
+        </div>
+
+        <div id="right-main" class="box-3">
+            Right main
+        </div>
+
+    </div>
+
+    <!-- Thẻ div chứa footer (chân trang) -->
+    <div id="footer">
+        Footer
+    </div>
+
+</body>
+
+</html>

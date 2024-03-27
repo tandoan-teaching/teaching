@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        
+        .container {
+            display: inline-block;
+            width: 900px;
+            height: 400px;
+            background: tomato;
+            text-align: center;
+        }
+        
+        .btn {
+            /* không quan trọng */
+            margin-top: 50px;
+            /* nên khai báo */
+            width: 120px;
+            height: 40px;
+            line-height: 40px;
+            background: black;
+            color: white;
+            display: inline-block;
+            border-radius: 2em;
+        }
+        /* trạng thái ghê chuột vào */
+        
+        .btn:hover {
+            background: lightseagreen;
+            cursor: pointer;
+        }
+        
+        .btn a {
+            color: white;
+            /* bỏ gạch chân */
+            text-decoration: none;
+        }
+        
+        .btn a:hover {
+            color: red;
+        }
+        /* .btn:hover a {
+            color: red;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="btn">
+            <a href="#">Đăng ký</a>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

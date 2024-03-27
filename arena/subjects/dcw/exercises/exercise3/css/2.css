@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+    /* padding: 100px 100px 100px 300px; */
+    padding-top: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.offer {
+    background-image: url("../images/flickr-1.jpg");
+    width: 770px;
+    height: 400px;
+    /* Sử dụng kết hợp với "text-align: center;" từ nội dung chứa nó  */
+    display: inline-block;
+    text-align: center;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+h2 {
+    display: inline-block;
+}
+
+.btn {
+    background: tomato;
+    text-align: center;
+    margin: 100px 20px 20px 147px;
+    width: 350px;
+    height: 40px;
+    line-height: 35px;
+    font-size: 18px;
+    border-radius: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}

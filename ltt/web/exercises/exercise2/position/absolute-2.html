@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+        body {
+            background: tomato;
+        }
+        
+        .relative {
+            height: 300px;
+            width: 300px;
+            margin: 100px auto;
+            background: blue;
+        }
+        
+        .absolute {
+            position: absolute;
+            height: 40px;
+            width: 40px;
+        }
+        
+        .red {
+            top: 200px;
+            left: 100px;
+            background: red;
+        }
+        
+        .yellow {
+            top: 100px;
+            left: 200px;
+            background: yellow;
+        }
+        
+        .white {
+            top: 150px;
+            left: 250px;
+            background: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="relative">
+        <div class="absolute red"></div>
+        <div class="absolute yellow"></div>
+        <div class="absolute white"></div>
+    </div>
+</body>
+
+</html>

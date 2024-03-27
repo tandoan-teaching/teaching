@@ -1,0 +1,49 @@
+/* 
+    Định dạng ul li giống như button 
+    Áp dụng cho nội dung Tìm hiểu ngay
+*/
+
+.btn-list {
+    text-align: center;
+    color: blue;
+    background: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-list li {
+    display: inline;
+    margin: 0 12px;
+    /* Làm cho nội dung chữ READ MORE nằm giữa khối */
+    text-align: center;
+    border: none;
+}
+
+.btn-list li a {
+    background-color: #ffc600;
+    border-radius: 4em;
+    color: #fff;
+    /* Tạo khối cho READ MORE */
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    min-width: 120px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.btn-list li a:hover {
+    background-color: #00aeef;
+}
+
+.normal-list {
+    list-style-type: disc;
+    margin: 10px;
+    padding: 10px;
+    overflow: visible;
+    background: none;
+}
+
+.normal-list li {
+    clear: both;
+}

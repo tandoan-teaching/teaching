@@ -1,0 +1,56 @@
+html,
+body {
+    background: red;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#container {
+    background: gray;
+    min-height: 600px;
+    width: 100%;
+    padding: 0px;
+    display: inline-block;
+}
+
+#header {
+    background: greenyellow;
+    height: 100px;
+    border: 1px solid greenyellow;
+    line-height: 100px;
+}
+
+#main-menu {
+    background: blue;
+    height: 40px;
+    line-height: 40px;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+#main-content {
+    background: coral;
+    min-height: 400px;
+}
+
+#footer {
+    background: cyan;
+    height: 80px;
+    line-height: 80px;
+}
+
+#left-header {
+    background: darkmagenta;
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+#right-header {
+    background: darkorange;
+    width: 50%;
+    float: right;
+    height: 100%;
+    font-size: 12px;
+}
